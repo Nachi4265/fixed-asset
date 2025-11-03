@@ -1,13 +1,14 @@
 package com.pluralsight;
 
-public abstract class FixedAsset {
+public abstract class FixedAsset implements Valuable{
     private String name;
-    private double markeyvalue;
+    private double originalValue;
 
 
-    public FixedAsset(String name, double markeyvalue) {
+
+    public FixedAsset(String name, double originalValue) {
         this.name = name;
-        this.markeyvalue = markeyvalue;
+        this.originalValue = originalValue;
     }
 
 
@@ -20,11 +21,11 @@ public abstract class FixedAsset {
     }
 
     public double getMarkeyvalue() {
-        return markeyvalue;
+        return originalValue;
     }
 
     public void setMarkeyvalue(double markeyvalue) {
-        this.markeyvalue = markeyvalue;
+        this.originalValue = markeyvalue;
     }
 
 

@@ -4,8 +4,8 @@ public class Gold extends FixedAsset{
 
     private double weight;
 
-    public Gold(String name, double markeyvalue, double weight) {
-        super(name, markeyvalue);
+    public Gold(String name, double originalValue, double weight) {
+        super(name, originalValue);
         this.weight = weight;
     }
 

@@ -4,8 +4,8 @@ public class Jewerly extends FixedAsset{
 
     private double karat;
 
-    public Jewerly(String name, double markeyvalue, double karat) {
-        super(name, markeyvalue);
+    public Jewerly(String name, double originalValue, double karat) {
+        super(name, originalValue);
         this.karat = karat;
     }
 
